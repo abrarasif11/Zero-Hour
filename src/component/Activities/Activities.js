@@ -12,7 +12,7 @@ const Activities = (props) => {
             <p className='activities-time'>Time : {time}</p>
             </div>
             <button className='btn'>Add to List</button>
-        </div>
+            </div>
     );
 };
 
