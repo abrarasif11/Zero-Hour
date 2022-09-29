@@ -1,10 +1,7 @@
-.icon{
-    width: 5%;
-    margin-top: 20px;
-}
 .header{
-    padding-left: 100px;
+    background-color: lavender;
+
 }
 .header-text{
-    color :slateblue;
+    color: darkslateblue;
 }

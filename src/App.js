@@ -1,12 +1,12 @@
 import './App.css';
+import Activity from './component/Activity/Activity';
 import Header from './component/Header/Header';
 
 function App() {
   return (
-    <div className='body'>
     <div className="App">
       <Header></Header>
-    </div>
+      <Activity></Activity>
     </div>
   );
 }
