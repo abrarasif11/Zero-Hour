@@ -5,7 +5,8 @@
     padding: 10px;
 }
 .activities{
-    border: 1px solid gray;
+    
+    border: 0.1px solid gray;
     width: 282px;
     border-radius: 8px;
 }

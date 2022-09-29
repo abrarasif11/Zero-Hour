@@ -21,7 +21,17 @@ const Activity = () => {
                 }
             </div>
             <div className="profile-container">
-               <h3>Profile</h3>
+               <img src="" alt="" />
+               <h4 className='profile-text'>Pintu Islam</h4>
+               <p className='profile-text'>Location : Dhaka,Bangladesh</p>
+               <div className='info'>
+                <h6 className='weight'>75 KG</h6>
+                <p className='weight'>Weight</p>
+                <h6 className='height'>6.1</h6>
+                <p >Height</p>
+                <h6 className='age'>21 Years</h6>
+                <p >Age</p>
+               </div>
             </div>
         </div>
     );
