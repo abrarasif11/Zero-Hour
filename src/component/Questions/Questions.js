@@ -32,7 +32,9 @@ const Questions = () => {
            <ul>
             <li>
                 <h6>How many actions can be done by useEffect hook except fetching data?</h6>
-                <h6>Ans : </h6>
+                <h6>Ans : You might have a situation where you need to add event listener during the initial mount and clean them up at unmount and another case where a particular listener needs to be cleaned up and re-added on a prop change.
+                You need separate side-effect for different sets of changes. In such a case, separate out relevant side effects into different useEffects.
+                </h6>
             </li>
            </ul>
            </div>
