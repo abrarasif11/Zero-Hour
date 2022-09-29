@@ -2,7 +2,7 @@ import React from 'react';
 import './Activities.css';
 
 const Activities = (props) => {
-    const {picture, time, name, age} = props.activity
+    const {picture, time, name, age} = props.activity;
     return (
         <div className='activities'>
             <div>
@@ -11,7 +11,7 @@ const Activities = (props) => {
             <p className='activities-age'>Age : {age}</p>
             <p className='activities-time'>Time : {time}</p>
             </div>
-            <button className='btn'>Add to List</button>
+            <button onClick={() => props.handleClick(props.activity)} className='btn'>Add to List</button>
             </div>
     );
 };

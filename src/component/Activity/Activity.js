@@ -4,12 +4,22 @@ import './Activity.css';
 
 const Activity = () => {
     const [activities, setActivities] = useState([]);
+    const [times, setTimes] = useState([]);
 
     useEffect(()=>{
         fetch('activity.json')
         .then(res=> res.json())
         .then(data => setActivities(data))
     },[])
+    let time = 0
+    for(const activity of activities){
+         time = time + activity.time;  
+    }
+    const handleClick = (activity) =>{
+        console.log(activity);
+        const newTime = [...times, activity]
+        setTimes(newTime);
+      }
     return (
         <div className='main-container'>
             <div className="activity-container">
@@ -17,12 +27,12 @@ const Activity = () => {
                     activities.map(activity => <Activities 
                     key={activity.id}
                     activity={activity}
+                    handleClick={handleClick}
                     ></Activities>)
                 }
             </div>
             <div className="profile-container">
-               <img src="" alt="" />
-               <h4 className='profile-text'>Pintu Islam</h4>
+            <h4 className='profile-text'>Pintu Islam</h4>
                <h6 class="text-center">Student</h6>
                <p className='profile-text'>Location : Dhaka,Bangladesh</p>
                <div className='info'>
@@ -42,7 +52,7 @@ const Activity = () => {
                <h5 class='text-center mt-5 pt-4 mb-4'>Activity Details</h5>
                <div>
 
-               <h6 className='activity-time'>Activity Time : 00 Minitues</h6>
+               <h6 className='activity-time'>Activity Time :  minitues</h6>
                <h6 className='break-time'>Break Time : 00 Seconds</h6>
                </div>
                <button className='activity-btn'>Activity Completed</button>
