@@ -1,4 +1,28 @@
 .activities img{
     width: 280px;
     height: 190px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.activities{
+    border: 1px solid gray;
+    width: 282px;
+    border-radius: 8px;
+}
+.activities-name{
+    padding-left: 10px;
+}
+.activities-age{
+    padding-left: 10px;
+}
+.activities-time{
+    padding-left: 10px;
+}
+.btn{
+    background-color: darkslateblue;
+    color : white;
+    margin-left: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 10px;
 }
